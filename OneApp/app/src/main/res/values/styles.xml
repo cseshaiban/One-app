@@ -1,0 +1,31 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColorPrimary" tools:targetApi="21">@color/primary_text</item>
+        <item name="android:colorPrimary" tools:targetApi="21">@color/primary</item>
+        <item name="android:colorPrimaryDark" tools:targetApi="21">@color/primary_dark</item>
+        <item name="android:colorAccent" tools:targetApi="21">@color/accent</item>
+
+        <!--<item name="android:navigationBarColor" tools:targetApi="21">@color/primary_dark</item>-->
+
+        <item name="popupMenuStyle">@style/PopupMenu.MyAppTheme</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu.MyAppTheme</item>
+    </style>
+
+    <style name="Raised.Button" parent="android:style/Widget.Material.Button">
+        <item name="android:background">@drawable/raised_button_background</item>
+    </style>
+    <style name="PopupMenu.MyAppTheme" parent="Theme.AppCompat.Light">
+        <item name="android:popupBackground">@android:color/background_light</item>
+    </style>
+
+    <style name="MenuButtonsStyle">
+        <item name="fab_size">mini</item>
+        <item name="fab_shadowColor">#444</item>
+        <item name="fab_colorNormal">@color/AccentColor</item>
+        <item name="fab_colorPressed">@color/AccentColor</item>
+        <item name="fab_colorRipple">@color/AccentColor</item>
+    </style>
+
+</resources>

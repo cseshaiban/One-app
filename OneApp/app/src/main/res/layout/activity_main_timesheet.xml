@@ -1,0 +1,422 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:id="@+id/drawer_layout"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:fitsSystemWindows="true">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_timesheet"></include>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/my_primary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+
+                android:src="@mipmap/back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="2015"
+                android:textColor="@color/text"
+                android:textSize="18sp"></TextView>
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/l1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:text="02 Sep - 08 Sep"
+                        android:textColor="@color/my_primary_text"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:layout_toLeftOf="@+id/img"
+                        android:text="UNFILLED"
+                        android:textColor="@color/my_secondary_text"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/img"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="5dp"
+                        android:src="@mipmap/editblue" />
+
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/divider_color" />
+
+                <RelativeLayout
+                    android:id="@+id/l2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:text="23 Aug - 29 Aug"
+                        android:textColor="@color/my_primary_text"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:layout_toLeftOf="@+id/img2"
+                        android:text="SAVED"
+                        android:textColor="@color/my_secondary_text"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/img2"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="5dp"
+                        android:src="@mipmap/editblue" />
+
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/divider_color" />
+
+                <RelativeLayout
+                    android:id="@+id/l3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:text="16 Aug - 22 Aug"
+                        android:textColor="@color/my_primary_text"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:layout_toLeftOf="@+id/img3"
+                        android:text="SUBMITTED"
+                        android:textColor="@color/my_secondary_text"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/img3"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="5dp"
+                        android:src="@mipmap/editblue"
+                        android:visibility="invisible" />
+
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/divider_color" />
+
+                <RelativeLayout
+                    android:id="@+id/l4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:text="08 Aug - 14 Aug"
+                        android:textColor="@color/my_primary_text"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:layout_toLeftOf="@+id/img4"
+                        android:text="SUBMITTED"
+                        android:textColor="@color/my_secondary_text"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/img4"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="5dp"
+                        android:src="@mipmap/editblue"
+                        android:visibility="invisible" />
+
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/divider_color" />
+
+                <RelativeLayout
+                    android:id="@+id/l5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:text="01 Aug - 7 Aug"
+                        android:textColor="@color/my_primary_text"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:layout_toLeftOf="@+id/img5"
+                        android:text="APPROVED"
+                        android:textColor="@android:color/holo_green_dark"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/img5"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="5dp"
+                        android:src="@mipmap/editblue"
+                        android:visibility="invisible" />
+
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/divider_color" />
+
+                <RelativeLayout
+                    android:id="@+id/l6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:text="24 Jul - 30 Jul"
+                        android:textColor="@color/my_primary_text"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:layout_toLeftOf="@+id/img6"
+                        android:text="APPROVED"
+                        android:textColor="@android:color/holo_green_dark"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/img6"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="5dp"
+                        android:src="@mipmap/editblue"
+                        android:visibility="invisible" />
+
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/divider_color" />
+
+                <RelativeLayout
+                    android:id="@+id/l7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:text="17 Jul - 23 Jul"
+                        android:textColor="@color/my_primary_text"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:layout_toLeftOf="@+id/img7"
+                        android:text="REJECTED"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/img7"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="5dp"
+                        android:src="@mipmap/editblue" />
+
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/divider_color" />
+
+                <RelativeLayout
+                    android:id="@+id/l8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:text="10 Jul - 16 Jul"
+                        android:textColor="@color/my_primary_text"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:layout_toLeftOf="@+id/img8"
+                        android:text="APPROVED"
+                        android:textColor="@android:color/holo_green_dark"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/img8"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="5dp"
+                        android:src="@mipmap/editblue"
+                        android:visibility="invisible" />
+
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/divider_color" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <!-- your co<ntent layout -->
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="10dp"
+        android:src="@drawable/add"
+        android:visibility="gone"
+        app:backgroundTint="@color/my_accent" />
+</RelativeLayout>
+
+
+<android.support.design.widget.NavigationView
+    android:id="@+id/navigation_view"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    app:headerLayout="@layout/drawer_header"
+    app:menu="@menu/menu_drawer"/>
+
+
+</android.support.v4.widget.DrawerLayout>

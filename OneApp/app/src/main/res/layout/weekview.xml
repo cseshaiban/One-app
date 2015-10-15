@@ -1,0 +1,577 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/my_primary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        <RelativeLayout
+            android:id="@+id/back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/my_primary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/back" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="03 September"
+                    android:textColor="@color/text"
+                    android:textSize="18sp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(02 Sep - 08 Sep)"
+                    android:textColor="@color/text"
+                    android:textSize="16sp"></TextView>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                android:id="@+id/l2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/day12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Monday,02 Sep(8.5 Hrs)"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/img12"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"
+                    android:src="@mipmap/editblue" />
+
+                <TextView
+                    android:id="@+id/pj12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/day12"
+                    android:layout_below="@+id/day12"
+                    android:text="UNILEVER 004"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/pj22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/pj12"
+                    android:layout_below="@+id/pj12"
+                    android:text="SAP BPM 21"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/pjtm12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/img12"
+                    android:layout_marginRight="10dp"
+                    android:text="6.5Hrs"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/pjtm22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/pjtm12"
+                    android:layout_marginRight="10dp"
+                    android:text="2.0Hrs"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/pjtm22"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/divider_color" />
+
+
+            </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/l13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/day13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Today,03 Sep(7 Hrs)"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/img13"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="10dp"
+                        android:src="@mipmap/editblue" />
+
+                    <TextView
+                        android:id="@+id/pj13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/day13"
+                        android:layout_below="@+id/day13"
+                        android:text="CHERRYWORK 43"
+                        android:textColor="@color/my_primary_text"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/pj23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/pj13"
+                        android:layout_below="@+id/pj13"
+                        android:textColor="@color/my_primary_text"
+                        android:text="SAP BPM 16"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/pjtm13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/my_primary_text"
+                        android:layout_below="@+id/img13"
+                        android:layout_marginRight="10dp"
+                        android:text="3.0Hrs"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/pjtm23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/my_primary_text"
+                        android:layout_below="@+id/pjtm13"
+                        android:layout_marginRight="10dp"
+                        android:text="4.0Hrs"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/pjtm23"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/divider_color" />
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/l14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/day14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Wednesday,04 Sep(8 Hrs)"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/img14"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="10dp"
+                        android:src="@mipmap/editblue" />
+
+                    <TextView
+                        android:id="@+id/pj14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/day14"
+                        android:layout_below="@+id/day14"
+                        android:text="ALBL MILLS"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/pj24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/pj14"
+                        android:layout_below="@+id/pj14"
+                        android:text="SAP PI"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/pjtm14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/img14"
+                        android:layout_marginRight="10dp"
+                        android:text="3.6Hrs"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/pjtm24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/pjtm14"
+                        android:layout_marginRight="10dp"
+                        android:text="4.4Hrs"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/pjtm24"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/divider_color" />
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/l15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/day15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Thursday,05 Sep(6.5 Hrs)"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/img15"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="10dp"
+                        android:src="@mipmap/editblue" />
+
+                    <TextView
+                        android:id="@+id/pj15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/day15"
+                        android:layout_below="@+id/day15"
+                        android:text="QUALITY TEAM"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/pj25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/pj15"
+                        android:layout_below="@+id/pj15"
+                        android:text="SAP ECC"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/pjtm15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/img15"
+                        android:layout_marginRight="10dp"
+                        android:text="4.5Hrs"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/pjtm25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/pjtm15"
+                        android:layout_marginRight="10dp"
+                        android:text="2.0Hrs"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/pjtm25"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/divider_color" />
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/l16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/day16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Friday,06 Sep(8 Hrs)"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/img16"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="10dp"
+                        android:src="@mipmap/editblue" />
+
+                    <TextView
+                        android:id="@+id/pj16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/day16"
+                        android:layout_below="@+id/day16"
+                        android:text="ASAIN PAINTS"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/pj26"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/pj16"
+                        android:layout_below="@+id/pj16"
+                        android:text="CHERRYWORK"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/pjtm16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/img16"
+                        android:layout_marginRight="10dp"
+                        android:text="4.6Hrs"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/pjtm26"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/pjtm16"
+                        android:layout_marginRight="10dp"
+                        android:text="3.4Hrs"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/pjtm26"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/divider_color" />
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/l17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/day17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Saturday,07 Sep(4.5 Hrs)"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/img17"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="10dp"
+                        android:src="@mipmap/editblue" />
+
+                    <TextView
+                        android:id="@+id/pj17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/day17"
+                        android:layout_below="@+id/day17"
+                        android:text="UNILEVER KT"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/pj27"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/pj17"
+                        android:layout_below="@+id/pj17"
+                        android:text="SAP GATEWAY"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/pjtm17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/img17"
+                        android:layout_marginRight="10dp"
+                        android:text="2.5Hrs"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/pjtm27"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/pjtm17"
+                        android:layout_marginRight="10dp"
+                        android:text="2.0Hrs"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/pjtm27"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/divider_color" />
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/l1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/day1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Sunday,08 Sep(3 Hrs)"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/img1"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="10dp"
+                        android:src="@mipmap/editblue" />
+
+                    <TextView
+                        android:id="@+id/pj1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/day1"
+                        android:layout_below="@+id/day1"
+                        android:text="UNILEVER FDD"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/pj2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/pj1"
+                        android:layout_below="@+id/pj1"
+                        android:text="SAP PO"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/pjtm1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/img1"
+                        android:layout_marginRight="10dp"
+                        android:text="2.0Hrs"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/pjtm2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/pjtm1"
+                        android:layout_marginRight="10dp"
+                        android:text="1.0Hrs"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/pjtm2"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/divider_color" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/drawer_header"
+        app:menu="@menu/menu_drawer"/>
+</android.support.v4.widget.DrawerLayout >

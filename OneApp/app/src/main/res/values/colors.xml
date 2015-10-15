@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Arjun -->
+    <color name="primary">#2196F3</color>
+    <color name="primary_dark">#1976D2</color>
+    <color name="primary_light">#BBDEFB</color>
+    <color name="accent">#03A9F4</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#727272</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#B6B6B6</color>
+
+    <color name="user_group">#59ABE3</color>
+    <color name="system_group">#D91E18</color>
+    <color name="dim">#3b000000</color>
+
+    <!-- Leave app  -->
+
+
+    <color name="my_primary">#2196F3</color>
+    <color name="my_primary_dark">#1976D2</color>
+    <color name="my_primary_light">#BBDEFB</color>
+    <color name="my_accent">#03A9F4</color>
+    <color name="my_primary_text">#212121</color>
+    <color name="my_secondary_text">#727272</color>
+    <color name="my_icons">#FFFFFF</color>
+    <color name="divider_color">#B6B6B6</color>
+    <color name="text">#ffffff</color>
+    <color name="navigationBarColor">#000000</color>
+
+    <!-- Time sheet -->
+
+    <!--<color name="window_background">#CC000000</color>-->
+
+  <!--  <color name="my_primary">#2196F3</color>
+    <color name="my_primary_dark">#1976D2</color>
+    <color name="my_primary_light">#BBDEFB</color>
+    <color name="my_accent">#03A9F4</color>
+    <color name="my_primary_text">#212121</color>
+    <color name="my_secondary_text">#727272</color>
+    <color name="text">#ffffff</color>
+    <color name="divider_color">#b6b6b6</color>-->
+    <color name="tab_indicator_color">#ffffff</color>
+
+    <!-- talent acquisition -->
+    <color name="PrimaryColor">#0288D1</color>
+    <color name="PrimaryDarkColor">#03A9F4</color>
+    <color name="AccentColor">#448AFF</color>
+    <color name="LightPrimaryColor">#B3E5FC</color>
+    <color name="dividercolor">#b6b6b6</color>
+    <color name="tabindicator">#fff</color>
+    <color name="black">#000</color>
+    <color name="description">#727272</color>
+    <color name="experience">#484848</color>
+    <color name="location">#b1b1b1</color>
+    <color name="white">#ffffff</color>
+
+
+    <!-- Leave App -->
+    <color name="fabColor">#03A9F5</color>
+
+
+
+    <item name="red" type="color">#FF4444</item>
+    <item name="darkblue" type="color">#0099CC</item>
+    <item name="darkpurple" type="color">#9933CC</item>
+    <item name="darkgreen" type="color">#669900</item>
+    <item name="darkorange" type="color">#FF8800</item>
+    <item name="darkred" type="color">#CC0000</item>
+
+    <integer-array name="androidcolors">
+        <item>@color/red</item>
+        <item>@color/darkblue</item>
+        <item>@color/darkpurple</item>
+        <item>@color/darkgreen</item>
+        <item>@color/darkorange</item>
+        <item>@color/darkred</item>
+    </integer-array>
+
+</resources>
